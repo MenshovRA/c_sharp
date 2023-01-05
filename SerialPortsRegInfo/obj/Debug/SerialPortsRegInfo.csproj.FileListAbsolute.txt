@@ -1,0 +1,6 @@
+E:\Misc\GitHub\MenshovRA\c_sharp\SerialPortsRegInfo\bin\Debug\SerialPortsRegInfo.exe.config
+E:\Misc\GitHub\MenshovRA\c_sharp\SerialPortsRegInfo\bin\Debug\SerialPortsRegInfo.exe
+E:\Misc\GitHub\MenshovRA\c_sharp\SerialPortsRegInfo\bin\Debug\SerialPortsRegInfo.pdb
+E:\Misc\GitHub\MenshovRA\c_sharp\SerialPortsRegInfo\obj\Debug\SerialPortsRegInfo.csproj.CoreCompileInputs.cache
+E:\Misc\GitHub\MenshovRA\c_sharp\SerialPortsRegInfo\obj\Debug\SerialPortsRegInfo.exe
+E:\Misc\GitHub\MenshovRA\c_sharp\SerialPortsRegInfo\obj\Debug\SerialPortsRegInfo.pdb
