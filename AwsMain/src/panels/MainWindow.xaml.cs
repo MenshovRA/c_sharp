@@ -10,23 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace AwsLocalSettings
+namespace AwsMain
 {
     /// <summary>
-    /// Логика взаимодействия для LocalSettingWindow.xaml
+    /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
-    public partial class LocalSettingWindow : Window
+    public partial class MainWindow : Window
     {
-        public LocalSettingWindow()
+        public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void OnLoaded(object sender, RoutedEventArgs e)
-        {
-            // Формирование списка данных по COM порту
         }
     }
 }
