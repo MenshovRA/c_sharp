@@ -1,0 +1,15 @@
+D:\Roman\Misc\GitHub\MenshovRA\c_sharp\AwsMain\bin\Debug\AwsMain.exe.config
+D:\Roman\Misc\GitHub\MenshovRA\c_sharp\AwsMain\bin\Debug\AwsMain.exe
+D:\Roman\Misc\GitHub\MenshovRA\c_sharp\AwsMain\bin\Debug\AwsMain.pdb
+D:\Roman\Misc\GitHub\MenshovRA\c_sharp\AwsMain\obj\Debug\AwsMain.csproj.AssemblyReference.cache
+D:\Roman\Misc\GitHub\MenshovRA\c_sharp\AwsMain\obj\Debug\src\panels\MainWindow.g.cs
+D:\Roman\Misc\GitHub\MenshovRA\c_sharp\AwsMain\obj\Debug\App.g.cs
+D:\Roman\Misc\GitHub\MenshovRA\c_sharp\AwsMain\obj\Debug\AwsMain_MarkupCompile.cache
+D:\Roman\Misc\GitHub\MenshovRA\c_sharp\AwsMain\obj\Debug\AwsMain_MarkupCompile.lref
+D:\Roman\Misc\GitHub\MenshovRA\c_sharp\AwsMain\obj\Debug\src\panels\MainWindow.baml
+D:\Roman\Misc\GitHub\MenshovRA\c_sharp\AwsMain\obj\Debug\AwsMain.g.resources
+D:\Roman\Misc\GitHub\MenshovRA\c_sharp\AwsMain\obj\Debug\AwsMain.Properties.Resources.resources
+D:\Roman\Misc\GitHub\MenshovRA\c_sharp\AwsMain\obj\Debug\AwsMain.csproj.GenerateResource.cache
+D:\Roman\Misc\GitHub\MenshovRA\c_sharp\AwsMain\obj\Debug\AwsMain.csproj.CoreCompileInputs.cache
+D:\Roman\Misc\GitHub\MenshovRA\c_sharp\AwsMain\obj\Debug\AwsMain.exe
+D:\Roman\Misc\GitHub\MenshovRA\c_sharp\AwsMain\obj\Debug\AwsMain.pdb
