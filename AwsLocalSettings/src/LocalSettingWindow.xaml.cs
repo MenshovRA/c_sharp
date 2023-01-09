@@ -23,5 +23,10 @@ namespace AwsLocalSettings
         {
             InitializeComponent();
         }
+
+        private void OnLoaded(object sender, RoutedEventArgs e)
+        {
+            // Формирование списка данных по COM порту
+        }
     }
 }

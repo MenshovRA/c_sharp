@@ -39,6 +39,20 @@ namespace AwsLocalSettings
 				}
 			}
 
+
+            private ConnectionInfo connectionInfo;
+            public ConnectionInfo ConnectionInfo
+            {
+                get { return connectionInfo; }
+                set
+                {
+                    connectionInfo = value;
+					OnPropertyChanged("ConnectionInfo");
+                }
+            }
+
+
+            // TODO: это свойство необходимо после убрать - вместо него ConnectionInfo
 			private ConnectionType connectionType;
 			public ConnectionType ConnectionType
 			{
@@ -61,11 +75,13 @@ namespace AwsLocalSettings
 				}
 			}
 
+            // TODO:
 			public List<Employee> Emple;
 
 			public WorkstationInfo()
 			{
 				Emple = new List<Employee>();
+                connectionInfo = new ConnectionInfo();
 			}
 
 			public event PropertyChangedEventHandler PropertyChanged;
@@ -98,6 +114,7 @@ namespace AwsLocalSettings
 					ConnectionType = ConnectionType.SERIAL,
 					Enabled = false,
 				});
+
 				form.DgWorkstation.ItemsSource = null;
 				form.DgWorkstation.ItemsSource = Workstation;
 			};
@@ -106,13 +123,6 @@ namespace AwsLocalSettings
 			{
 			};
 
-			Workstation.Add(new WorkstationInfo()
-			{
-				Name = string.Format("Рабочее место №{0:D}", Workstation.Count + 1),
-				OperationType = OperationType.GetData()[0],
-				ConnectionType = ConnectionType.SERIAL,
-				Enabled = false,
-			});
 			form.DgWorkstation.ItemsSource = Workstation;
 			form.ShowDialog();
 		}

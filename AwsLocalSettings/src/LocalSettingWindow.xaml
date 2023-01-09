@@ -6,7 +6,9 @@
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
         xmlns:local="clr-namespace:AwsLocalSettings"
         mc:Ignorable="d"
-        Title="Локальные настройки" Height="450" Width="800">
+        Title="Локальные настройки"
+        Height="450" Width="800"
+        Loaded="OnLoaded">
 
     <Window.Resources>
         <ObjectDataProvider x:Key="TypeConnectionEnum" MethodName="GetValues" ObjectType="{x:Type sys:Enum}">
@@ -34,12 +36,19 @@
                         </Grid.RowDefinitions>
 
                         <DockPanel Grid.Row="0">
-                            <DataGrid Name="DgWorkstation" AutoGenerateColumns="False" Margin="7">
+                            <DataGrid Name="DgWorkstation" AutoGenerateColumns="False" Margin="7,8,7,6" CanUserAddRows="False">
                                 <DataGrid.Columns>
-                                    <DataGridTextColumn Width="175" Header="Наименование" Binding="{Binding Name}"/>
+                                    <DataGridCheckBoxColumn Width="50" Header="Исп." Binding="{Binding Enabled}"/>
+                                    <DataGridTextColumn Width="175" Header="Наименование" Binding="{Binding Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
                                     <DataGridComboBoxColumn Width="125" Header="Операция" DisplayMemberPath="Name" SelectedItemBinding="{Binding Info}" ItemsSource="{Binding Source={StaticResource OperationName}}"/>
-                                    <DataGridComboBoxColumn Width="125" Header="Тип подключения" SelectedItemBinding="{Binding ConnectionType}" ItemsSource="{Binding Source={StaticResource TypeConnectionEnum}}"/>
-                                    <DataGridCheckBoxColumn Width="125" Header="Используется" Binding="{Binding Enabled}"/>
+                                    <!--<DataGridComboBoxColumn Width="125" Header="Тип подключения" SelectedItemBinding="{Binding ConnectionType, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding Source={StaticResource TypeConnectionEnum}}"/>-->
+                                    <DataGridComboBoxColumn Width="125" Header="Тип подключения"                                                            
+                                                            SelectedItemBinding="{Binding ConnectionInfo.Type, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                            ItemsSource="{Binding Source={StaticResource TypeConnectionEnum}}"/>
+
+                                    <DataGridTextColumn Width="125" Header="Данные для COM"/>
+                                    <DataGridTextColumn Width="125" Header="Данные для TCP"/>
+                                    <DataGridTextColumn Width="*" Header="Сотрудники"/>
                                 </DataGrid.Columns>
                             </DataGrid>
                         </DockPanel>

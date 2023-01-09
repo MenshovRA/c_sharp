@@ -4,12 +4,52 @@ using System.Runtime.CompilerServices;
 
 namespace AwsLocalSettings
 {
+
+    /// <summary>
+    /// Тип подключения рабочего места
+    /// </summary>
 	public enum ConnectionType
 	{
 		SERIAL,
 		TCP,
 	}
 
+    /// <summary>
+    /// Данные для TCP подключения
+    /// </summary>
+    public class ConnectionInfoCOM
+    {
+        public string Name;
+        public string DeviceId;
+    }
+
+    /// <summary>
+    /// Данные для TCP подключения
+    /// </summary>
+    public class ConnectionInfoTCP 
+    {
+        public string EndPoint;
+    }
+
+    /// <summary>
+    /// Данные по подключению
+    /// </summary>
+    public class ConnectionInfo
+    {
+        public ConnectionType Type { get; set; }
+        public ConnectionInfoCOM ComInfo { get; set; }
+        public ConnectionInfoTCP TcpInfo { get; set; }
+
+        public ConnectionInfo()
+        {
+            ComInfo = new ConnectionInfoCOM();
+            TcpInfo = new ConnectionInfoTCP();
+        }
+    }
+
+    /// <summary>
+    /// Тип операции в СУВИ (вафельница, монтаж, сборка)
+    /// </summary>
 	public static class OperationType
 	{
 		public class Info : INotifyPropertyChanged
